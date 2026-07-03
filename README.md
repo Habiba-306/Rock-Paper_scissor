@@ -76,4 +76,5 @@ python main.py
 
 ## 📝 License
 
-This project is open-source and available under the **MIT License**.
+This project is developed for academic purposes at the University of Haripur.
+All rights reserved © .
