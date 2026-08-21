@@ -83,6 +83,8 @@ python main.py
 - After 10 rounds, the match ends – or press E to end early
 - Press Q to quit at any time
 
+---
+
 ## 📁 Project Structure
 
 ```
@@ -95,14 +97,16 @@ Rock-Paper-Scissors/
 └──  README.md            # This file
 ```
 
-### 🖐️ How Gesture Recognition Works
+---
+
+## 🖐️ How Gesture Recognition Works
 
 Gesture	Finger Pattern	Landmark Logic
 - ✊ Rock	All fingers down	All tips below knuckles
 - 🖐️ Paper	All fingers up	All tips above knuckles
 - ✌️ Scissors	Index + Middle up	Only landmarks 8 and 12 extended
 
-## 🎮 Game Logic
+### 🎮 Game Logic
 
 The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
@@ -189,7 +193,7 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 [Add a GIF or screenshot here]
 
 
-### 💡 Possible Extensions
+## 💡 Possible Extensions
 
   - Add multiplayer mode
   - Add voice feedback
@@ -208,7 +212,7 @@ Feel free to use and modify.
 
 ---
 
-### 📫 Connect
+## 📫 Connect
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Habiba-306)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/habiba-javed)  
