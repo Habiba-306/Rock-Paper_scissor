@@ -190,13 +190,13 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ## 📸 Demo
 
-## Demo
 
 <p align="center">
-  <video src="https://raw.githubusercontent.com/Habiba-306/Rock-Paper_scissor/main/demo.mp4" width="600" controls autoplay muted loop playsinline>
+  <video width="600" controls autoplay muted loop playsinline>
+    <source src="https://raw.githubusercontent.com/Habiba-306/Rock-Paper_scissor/main/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
 </p>
-
 
 ## 💡 Possible Extensions
 
