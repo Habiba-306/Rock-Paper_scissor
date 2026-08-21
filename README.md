@@ -42,49 +42,48 @@ This project implements a **real-time Rock-Paper-Scissors game** using computer 
 - Python 3.7 or higher
 - Webcam
 
+---
+
 ### Step 1: Clone the Repository
-bash
-
+```bash
 git clone https://github.com/Habiba-306/Rock-Paper-Scissors.git
-
 cd Rock-Paper-Scissors
 
+--- 
 
 ### Step 2: Install Dependencies
-
-
+bash
 pip install -r requirements.txt
+Alternative (Manual Install):
 
-
-**##Alternative (Manual Install):**
-
-
+bash
 pip install opencv-python mediapipe cvzone
-
-
-### Step 3: Prepare Resources
-
+Step 3: Prepare Resources
 Make sure the resources/ folder contains the required images:
-**BG.png –** background image (1280×720)
-**1.png, 2.png, 3.png –** AI move images (Rock, Paper, Scissors)
-**winner_you.png –** displayed when you win the match
-**winner_AI.png –** displayed when AI wins the match
 
-### Step 4: Run the Game
+BG.png – Background image (1280×720)
 
+1.png, 2.png, 3.png – AI move images (Rock, Paper, Scissors)
 
+winner_you.png – Displayed when you win the match
+
+winner_AI.png – Displayed when AI wins the match
+
+Step 4: Run the Game
+bash
 python main.py
+Step 5: Play!
+Show your hand to the webcam
 
+Make a gesture: ✊ Rock, 🖐️ Paper, or ✌️ Scissors
 
-### Step 5: Play!
+Press S to start a round
 
-Show your hand to the webcam.
-Make a gesture: Rock ✊, Paper 🖐️, or Scissors ✌️.
-Press S to start a round.
-The AI randomly selects its move.
-The result is displayed instantly.
-After 10 rounds, the match ends – or press E to end early.
-Press Q to quit at any time.
+The AI randomly selects its move – the result is displayed instantly
+
+After 10 rounds, the match ends – or press E to end early
+
+Press Q to quit at any time
 
 ## 📁 Project Structure
 
