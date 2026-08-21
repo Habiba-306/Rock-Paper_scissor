@@ -43,18 +43,24 @@ This project implements a **real-time Rock-Paper-Scissors game** using computer 
 - Webcam
 
 ### Step 1: Clone the Repository
+bash
 
 git clone https://github.com/Habiba-306/Rock-Paper-Scissors.git
+
 cd Rock-Paper-Scissors
+
 
 ### Step 2: Install Dependencies
 
+
 pip install -r requirements.txt
+
 
 **##Alternative (Manual Install):**
 
 
 pip install opencv-python mediapipe cvzone
+
 
 ### Step 3: Prepare Resources
 
@@ -66,7 +72,9 @@ Make sure the resources/ folder contains the required images:
 
 ### Step 4: Run the Game
 
+
 python main.py
+
 
 ### Step 5: Play!
 
@@ -187,15 +195,10 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 ### 💡 Possible Extensions
 
       Add multiplayer mode
-      
       Add voice feedback
-      
       Add gesture smoothing to reduce jitter
-      
       Add difficulty levels (AI with strategy, not random)
-      
       Save game history to CSV
-      
       Add hand orientation detection
 
 ## 📝 License
