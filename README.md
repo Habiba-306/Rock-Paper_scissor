@@ -38,45 +38,31 @@ This project implements a **real-time Rock-Paper-Scissors game** using computer 
 - Python 3.7 or higher
 - Webcam
 
-### Steps
-
-```bash
-# 1. Clone the repository
+### Step 1: Clone the Repository
+bash
 git clone https://github.com/Habiba-306/Rock-Paper-Scissors.git
 cd Rock-Paper-Scissors
 
-# 2. Install dependencies
+### Step 2: Install Dependencies
+bash
 pip install -r requirements.txt
 
-# 3. Run the game
+**##Alternative (Manual Install):**
+
+bash
+pip install opencv-python mediapipe cvzone
+
+### Step 3: Run the Game
+bash
 python main.py
-```
 
----
+### Step 4: Play!
 
-### 🖐️ How Gesture Recognition Works
-
-**Step 1: Hand Landmark Detection**  
-MediaPipe detects 21 hand landmarks in 3D space (x, y, z coordinates).
-
-**Step 2: Finger State Detection**  
-The `fingersUp()` method determines if each finger is extended:
-
-- Index finger (landmark 8): Extended if y-coordinate < landmark 5 (knuckle)
-- Middle finger (landmark 12): Extended if y-coordinate < landmark 9
-- Ring finger (landmark 16): Extended if y-coordinate < landmark 13
-- Pinky (landmark 20): Extended if y-coordinate < landmark 17
-- Thumb (landmark 4): Extended if x-coordinate < landmark 2 (for right hand)
-
-**Step 3: Gesture Mapping**
-                                        
-                                        | Gesture   | Finger Pattern          | Landmark Logic                         |
-                                        |-----------|--------------------------|----------------------------------------|
-                                        | ✊ Rock   | All fingers down        | All tips below knuckles                |
-                                        | 🖐️ Paper | All fingers up          | All tips above knuckles                |
-                                        | ✌️ Scissors| Index + Middle up       | Only landmarks 8 and 12 extended       |
-
----
+Show your hand to the webcam
+Make a gesture: Rock ✊, Paper 🖐️, or Scissors ✌️
+The AI randomly selects its move
+The result is displayed instantly
+Press 'q' to quit-
 
 ## 📁 Project Structure
 
@@ -89,6 +75,19 @@ Rock-Paper-Scissors/
 ├── README.md            # This file
 └── .gitignore           # Git ignore rules
 ```
+
+### 🖐️ How Gesture Recognition Works
+
+ **Gesture Mapping**
+                                        
+                                        | Gesture   | Finger Pattern          | Landmark Logic                         |
+                                        |-----------|--------------------------|----------------------------------------|
+                                        | ✊ Rock   | All fingers down        | All tips below knuckles                |
+                                        | 🖐️ Paper | All fingers up          | All tips above knuckles                |
+                                        | ✌️ Scissors| Index + Middle up       | Only landmarks 8 and 12 extended       |
+
+---
+
 
 ---
 
