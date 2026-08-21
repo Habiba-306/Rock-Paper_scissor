@@ -43,17 +43,17 @@ This project implements a **real-time Rock-Paper-Scissors game** using computer 
 - Webcam
 
 ### Step 1: Clone the Repository
-bash
+
 git clone https://github.com/Habiba-306/Rock-Paper-Scissors.git
 cd Rock-Paper-Scissors
 
 ### Step 2: Install Dependencies
-bash
+
 pip install -r requirements.txt
 
 **##Alternative (Manual Install):**
 
-bash
+
 pip install opencv-python mediapipe cvzone
 
 ### Step 3: Prepare Resources
@@ -65,7 +65,7 @@ Make sure the resources/ folder contains the required images:
 **winner_AI.png –** displayed when AI wins the match
 
 ### Step 4: Run the Game
-bash
+
 python main.py
 
 ### Step 5: Play!
@@ -92,18 +92,10 @@ Rock-Paper-Scissors/
 
 ### 🖐️ How Gesture Recognition Works
 
- **Gesture Mapping**
-                                        
-                                        | Gesture   | Finger Pattern          | Landmark Logic                         |
-                                        |-----------|--------------------------|----------------------------------------|
-                                        | ✊ Rock   | All fingers down        | All tips below knuckles                |
-                                        | 🖐️ Paper | All fingers up          | All tips above knuckles                |
-                                        | ✌️ Scissors| Index + Middle up       | Only landmarks 8 and 12 extended       |
-
----
-
-
----
+Gesture	Finger Pattern	Landmark Logic
+✊ Rock	All fingers down	All tips below knuckles
+🖐️ Paper	All fingers up	All tips above knuckles
+✌️ Scissors	Index + Middle up	Only landmarks 8 and 12 extended
 
 ## 🎮 Game Logic
 
@@ -158,7 +150,6 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
   </tbody>
 </table>
 
----
 
 ## 📊 Performance
 <div align="center">
@@ -173,7 +164,6 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 </div>
 
----
 
 ## 🛠️ Tech Stack
 <div align="center">
@@ -193,30 +183,30 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 [Add a GIF or screenshot here]
 
----
 
 ### 💡 Possible Extensions
 
-Add multiplayer mode
-
-Add voice feedback
-
-Add gesture smoothing to reduce jitter
-
-Add difficulty levels (AI with strategy, not random)
-
-Save game history to CSV
-
-Add hand orientation detection
+      Add multiplayer mode
+      
+      Add voice feedback
+      
+      Add gesture smoothing to reduce jitter
+      
+      Add difficulty levels (AI with strategy, not random)
+      
+      Save game history to CSV
+      
+      Add hand orientation detection
 
 ## 📝 License
 
 This project is developed for academic purposes at the University of Haripur.
 Feel free to use and modify.
 
----
 
 ⭐ If you found this helpful, consider giving it a star!
+
+---
 
 ### 📫 Connect
 
