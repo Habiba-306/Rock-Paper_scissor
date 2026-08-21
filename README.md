@@ -70,24 +70,54 @@ The `fingersUp()` method determines if each finger is extended:
 
 **Step 3: Gesture Mapping**
 
-| Gesture   | Finger Pattern          | Landmark Logic                         |
-|-----------|--------------------------|----------------------------------------|
-| ✊ Rock   | All fingers down        | All tips below knuckles                |
-| 🖐️ Paper | All fingers up          | All tips above knuckles                |
-| ✌️ Scissors| Index + Middle up       | Only landmarks 8 and 12 extended       |
-
-```python
-# Simplified logic
-def get_gesture(fingers):
-    if fingers == [0, 0, 0, 0, 0]:  # All down
-        return "Rock"
-    elif fingers == [1, 1, 1, 1, 1]:  # All up
-        return "Paper"
-    elif fingers == [1, 1, 0, 0, 0]:  # Index + Middle
-        return "Scissors"
-    else:
-        return "Unknown"
-```
+|<table align="center" style="border-collapse: collapse; font-size: 1.1em; text-align: center; width: 70%; margin: 20px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: #2c3e50; color: #ffffff; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+      <th style="padding: 14px 10px; border-right: 1px solid #444;">🧑 Player</th>
+      <th style="padding: 14px 10px; border-right: 1px solid #444;">🤖 AI</th>
+      <th style="padding: 14px 10px;">🏆 Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Win rows -->
+    <tr style="background: #eafaf1; border-bottom: 1px solid #ddd;">
+      <td style="padding: 12px;">✊ Rock</td>
+      <td style="padding: 12px;">✌️ Scissors</td>
+      <td style="padding: 12px; font-weight: bold; color: #1e8449;">✅ Win</td>
+    </tr>
+    <tr style="background: #fdedec; border-bottom: 1px solid #ddd;">
+      <td style="padding: 12px;">✊ Rock</td>
+      <td style="padding: 12px;">🖐️ Paper</td>
+      <td style="padding: 12px; font-weight: bold; color: #922b21;">❌ Lose</td>
+    </tr>
+    <tr style="background: #eafaf1; border-bottom: 1px solid #ddd;">
+      <td style="padding: 12px;">🖐️ Paper</td>
+      <td style="padding: 12px;">✊ Rock</td>
+      <td style="padding: 12px; font-weight: bold; color: #1e8449;">✅ Win</td>
+    </tr>
+    <tr style="background: #fdedec; border-bottom: 1px solid #ddd;">
+      <td style="padding: 12px;">🖐️ Paper</td>
+      <td style="padding: 12px;">✌️ Scissors</td>
+      <td style="padding: 12px; font-weight: bold; color: #922b21;">❌ Lose</td>
+    </tr>
+    <tr style="background: #eafaf1; border-bottom: 1px solid #ddd;">
+      <td style="padding: 12px;">✌️ Scissors</td>
+      <td style="padding: 12px;">🖐️ Paper</td>
+      <td style="padding: 12px; font-weight: bold; color: #1e8449;">✅ Win</td>
+    </tr>
+    <tr style="background: #fdedec; border-bottom: 1px solid #ddd;">
+      <td style="padding: 12px;">✌️ Scissors</td>
+      <td style="padding: 12px;">✊ Rock</td>
+      <td style="padding: 12px; font-weight: bold; color: #922b21;">❌ Lose</td>
+    </tr>
+    <!-- Tie row -->
+    <tr style="background: #fef9e7;">
+      <td style="padding: 12px; font-weight: 500;">🔄 Same</td>
+      <td style="padding: 12px; font-weight: 500;">🔄 Same</td>
+      <td style="padding: 12px; font-weight: bold; color: #b7950b;">🤝 Tie</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
