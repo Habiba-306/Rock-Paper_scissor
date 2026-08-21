@@ -164,6 +164,7 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ## 🛠️ Tech Stack
 <div align="center">
+  
 | Component | Technology |
 |---|---|
 | Language | Python 3.7+ |
@@ -171,6 +172,7 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 | Gesture Classification | cvzone HandTrackingModule |
 | Image Processing | OpenCV |
 | GUI | OpenCV window + custom overlays |
+
 </div>
 
 
