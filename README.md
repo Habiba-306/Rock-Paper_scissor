@@ -147,17 +147,20 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ---
 
-# Performance
+## 📊 Performance
+<div align="center">
 
 | Metric | Value |
 |---|---|
 | Gesture Classification Speed | < 10ms |
 | Frame Rate | 15-30 FPS |
-| Hand Tracking Accuracy | High (MediaPipe) |
+| Hand Tracking Accuracy | ✅ High (MediaPipe) |
 | No. of Hand Landmarks | 21 |
-| Gestures Supported | 3 (Rock, Paper, Scissors) |
+| Gestures Supported | 3 (✊ Rock, 🖐️ Paper, ✌️ Scissors) |
 
-# Tech Stack
+<br>
+
+## 🛠️ Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -167,6 +170,7 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 | Image Processing | OpenCV |
 | GUI | OpenCV window + custom overlays |
 
+</div>
 
 ## 📸 Demo
 
