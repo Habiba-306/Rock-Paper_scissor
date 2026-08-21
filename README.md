@@ -1,9 +1,5 @@
-Here’s the raw markdown text for your README.md file. Copy and paste it directly into your `README.md` – it’s ready to go.
 
----
-
-```markdown
-# ✊ Rock-Paper-Scissors Game with Webcam
+# ***✊ Rock-Paper-Scissors Game with Webcam***
 
 Real-time hand gesture recognition game using MediaPipe's 21-point hand landmark model and cvzone's HandTrackingModule.
 
