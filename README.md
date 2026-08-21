@@ -64,13 +64,13 @@ pip install opencv-python mediapipe cvzone
 
 Make sure the resources/ folder contains the required images:
 
-BG.png – Background image (1280×720)
+**BG.png –** Background image (1280×720)
 
-1.png, 2.png, 3.png – AI move images (Rock, Paper, Scissors)
+**1.png, 2.png, 3.png –** AI move images (Rock, Paper, Scissors)
 
-winner_you.png – Displayed when you win the match
+**winner_you.png –** Displayed when you win the match
 
-winner_AI.png – Displayed when AI wins the match
+**winner_AI.png –** Displayed when AI wins the match
 
 ### Step 4: Run the Game
 ```bash
