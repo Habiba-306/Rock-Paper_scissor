@@ -181,14 +181,14 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ---
 
+### 💡 Possible Extensions
 
-## 📫 Connect
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Habiba-306)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)  
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:youremail@example.com)
-
----
+□ Add multiplayer mode
+□ Add voice feedback
+□ Add gesture smoothing to reduce jitter
+□ Add difficulty levels (AI with strategy, not random)
+□ Save game history to CSV
+□ Add hand orientation detection
 
 ## 📝 License
 
@@ -198,3 +198,11 @@ Feel free to use and modify.
 ---
 ⭐ If you found this helpful, consider giving it a star!
 ```
+
+
+## 📫 Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Habiba-306)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/habiba-javed)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:habibajaved150@gmail.com)
+---
