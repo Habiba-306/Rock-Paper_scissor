@@ -62,15 +62,12 @@ pip install opencv-python mediapipe cvzone
 
 ### Step 3: Prepare Resources
 
-Make sure the resources/ folder contains the required images:
+Make sure the `resources/` folder contains the required images:
 
-**BG.png –** Background image (1280×720)
-
-**1.png, 2.png, 3.png –** AI move images (Rock, Paper, Scissors)
-
-**winner_you.png –** Displayed when you win the match
-
-**winner_AI.png –** Displayed when AI wins the match
+- **`BG.png`** – Background image (1280×720)
+- **`1.png`**, **`2.png`**, **`3.png`** – AI move images (✊ Rock, 🖐️ Paper, ✌️ Scissors)
+- **`winner_you.png`** – 🎉 Displayed when **you** win the match
+- **`winner_AI.png`** – 🤖 Displayed when **AI** wins the match
 
 ### Step 4: Run the Game
 ```bash
@@ -79,17 +76,12 @@ python main.py
 
 ### Step 5: Play!
 
-Show your hand to the webcam
-
-Make a gesture: ✊ Rock, 🖐️ Paper, or ✌️ Scissors
-
-Press S to start a round
-
-The AI randomly selects its move – the result is displayed instantly
-
-After 10 rounds, the match ends – or press E to end early
-
-Press Q to quit at any time
+- Show your hand to the webcam
+- Make a gesture: ✊ Rock, 🖐️ Paper, or ✌️ Scissors
+- Press S to start a round
+- The AI randomly selects its move – the result is displayed instantly
+- After 10 rounds, the match ends – or press E to end early
+- Press Q to quit at any time
 
 ## 📁 Project Structure
 
@@ -106,9 +98,9 @@ Rock-Paper-Scissors/
 ### 🖐️ How Gesture Recognition Works
 
 Gesture	Finger Pattern	Landmark Logic
-✊ Rock	All fingers down	All tips below knuckles
-🖐️ Paper	All fingers up	All tips above knuckles
-✌️ Scissors	Index + Middle up	Only landmarks 8 and 12 extended
+-✊ Rock	All fingers down	All tips below knuckles
+-🖐️ Paper	All fingers up	All tips above knuckles
+-✌️ Scissors	Index + Middle up	Only landmarks 8 and 12 extended
 
 ## 🎮 Game Logic
 
@@ -199,12 +191,12 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ### 💡 Possible Extensions
 
-      Add multiplayer mode
-      Add voice feedback
-      Add gesture smoothing to reduce jitter
-      Add difficulty levels (AI with strategy, not random)
-      Save game history to CSV
-      Add hand orientation detection
+  - Add multiplayer mode
+  - Add voice feedback
+  - Add gesture smoothing to reduce jitter
+  - Add difficulty levels (AI with strategy, not random)
+  - Save game history to CSV
+  - Add hand orientation detection
 
 ## 📝 License
 
