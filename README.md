@@ -48,17 +48,20 @@ This project implements a **real-time Rock-Paper-Scissors game** using computer 
 ```bash
 git clone https://github.com/Habiba-306/Rock-Paper-Scissors.git
 cd Rock-Paper-Scissors
-
---- 
+``` 
 
 ### Step 2: Install Dependencies
-bash
+```bash
 pip install -r requirements.txt
-Alternative (Manual Install):
+```
 
-bash
+Alternative (Manual Install):
+```bash
 pip install opencv-python mediapipe cvzone
-Step 3: Prepare Resources
+```
+
+### Step 3: Prepare Resources
+
 Make sure the resources/ folder contains the required images:
 
 BG.png – Background image (1280×720)
@@ -69,10 +72,13 @@ winner_you.png – Displayed when you win the match
 
 winner_AI.png – Displayed when AI wins the match
 
-Step 4: Run the Game
-bash
+### Step 4: Run the Game
+```bash
 python main.py
-Step 5: Play!
+```
+
+### Step 5: Play!
+
 Show your hand to the webcam
 
 Make a gesture: ✊ Rock, 🖐️ Paper, or ✌️ Scissors
