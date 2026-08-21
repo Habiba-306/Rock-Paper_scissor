@@ -158,10 +158,12 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 | No. of Hand Landmarks | 21 |
 | Gestures Supported | 3 (✊ Rock, 🖐️ Paper, ✌️ Scissors) |
 
-<br>
+</div>
+
+---
 
 ## 🛠️ Tech Stack
-
+<div align="center">
 | Component | Technology |
 |---|---|
 | Language | Python 3.7+ |
@@ -169,8 +171,8 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 | Gesture Classification | cvzone HandTrackingModule |
 | Image Processing | OpenCV |
 | GUI | OpenCV window + custom overlays |
-
 </div>
+
 
 ## 📸 Demo
 
