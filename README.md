@@ -147,73 +147,26 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ---
 
-<h3 align="center">📊 Performance</h3>
+# Performance
 
-<table align="center" style="border-collapse: collapse; font-size: 1em; text-align: left; width: 65%; margin: 10px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-  <thead>
-    <tr style="background: #2c3e50; color: #ffffff; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
-      <th style="padding: 14px 20px; border-right: 1px solid #444;">⚙️ Metric</th>
-      <th style="padding: 14px 20px;">📈 Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Gesture Classification Speed</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">&lt; 10ms</td>
-    </tr>
-    <tr style="background: #ffffff; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Frame Rate</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">15-30 FPS</td>
-    </tr>
-    <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Hand Tracking Accuracy</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #2e7d32;">✅ High (MediaPipe)</td>
-    </tr>
-    <tr style="background: #ffffff; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">No. of Hand Landmarks</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">21</td>
-    </tr>
-    <tr style="background: #f8f9fa;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Gestures Supported</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">3 (✊ Rock, 🖐️ Paper, ✌️ Scissors)</td>
-    </tr>
-  </tbody>
-</table>
+| Metric | Value |
+|---|---|
+| Gesture Classification Speed | < 10ms |
+| Frame Rate | 15-30 FPS |
+| Hand Tracking Accuracy | High (MediaPipe) |
+| No. of Hand Landmarks | 21 |
+| Gestures Supported | 3 (Rock, Paper, Scissors) |
 
-<br>
+# Tech Stack
 
-<h3 align="center">🛠️ Tech Stack</h3>
+| Component | Technology |
+|---|---|
+| Language | Python 3.7+ |
+| Hand Tracking | MediaPipe |
+| Gesture Classification | cvzone HandTrackingModule |
+| Image Processing | OpenCV |
+| GUI | OpenCV window + custom overlays |
 
-<table align="center" style="border-collapse: collapse; font-size: 1em; text-align: left; width: 65%; margin: 10px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-  <thead>
-    <tr style="background: #2c3e50; color: #ffffff; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
-      <th style="padding: 14px 20px; border-right: 1px solid #444;">🧩 Component</th>
-      <th style="padding: 14px 20px;">⚡ Technology</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Language</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">Python 3.7+</td>
-    </tr>
-    <tr style="background: #ffffff; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Hand Tracking</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">MediaPipe</td>
-    </tr>
-    <tr style="background: #f8f9fa; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Gesture Classification</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">cvzone HandTrackingModule</td>
-    </tr>
-    <tr style="background: #ffffff; border-bottom: 1px solid #e9ecef;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">Image Processing</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">OpenCV</td>
-    </tr>
-    <tr style="background: #f8f9fa;">
-      <td style="padding: 12px 20px; border-right: 1px solid #e9ecef;">GUI</td>
-      <td style="padding: 12px 20px; font-weight: 500; color: #1a73e8;">OpenCV window + custom overlays</td>
-    </tr>
-  </tbody>
-</table>
 
 ## 📸 Demo
 
