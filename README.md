@@ -98,9 +98,9 @@ Rock-Paper-Scissors/
 ### 🖐️ How Gesture Recognition Works
 
 Gesture	Finger Pattern	Landmark Logic
--✊ Rock	All fingers down	All tips below knuckles
--🖐️ Paper	All fingers up	All tips above knuckles
--✌️ Scissors	Index + Middle up	Only landmarks 8 and 12 extended
+- ✊ Rock	All fingers down	All tips below knuckles
+- 🖐️ Paper	All fingers up	All tips above knuckles
+- ✌️ Scissors	Index + Middle up	Only landmarks 8 and 12 extended
 
 ## 🎮 Game Logic
 
