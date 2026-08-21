@@ -1,5 +1,5 @@
 
-# ***✊ Rock-Paper-Scissors Game with Webcam***
+# ✊ Rock-Paper-Scissors Game with Webcam
 
 Real-time hand gesture recognition game using MediaPipe's 21-point hand landmark model and cvzone's HandTrackingModule.
 
@@ -69,8 +69,34 @@ The `fingersUp()` method determines if each finger is extended:
 - Thumb (landmark 4): Extended if x-coordinate < landmark 2 (for right hand)
 
 **Step 3: Gesture Mapping**
+                                        
+                                        | Gesture   | Finger Pattern          | Landmark Logic                         |
+                                        |-----------|--------------------------|----------------------------------------|
+                                        | ✊ Rock   | All fingers down        | All tips below knuckles                |
+                                        | 🖐️ Paper | All fingers up          | All tips above knuckles                |
+                                        | ✌️ Scissors| Index + Middle up       | Only landmarks 8 and 12 extended       |
 
-|<table align="center" style="border-collapse: collapse; font-size: 1.1em; text-align: center; width: 70%; margin: 20px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+---
+
+## 📁 Project Structure
+
+```
+Rock-Paper-Scissors/
+├── main.py              # Main game loop and GUI
+├── hand_tracker.py      # Hand detection and gesture classification
+├── game_logic.py        # Rock-Paper-Scissors game rules
+├── requirements.txt     # Dependencies
+├── README.md            # This file
+└── .gitignore           # Git ignore rules
+```
+
+---
+
+## 🎮 Game Logic
+
+The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
+
+<table align="center" style="border-collapse: collapse; font-size: 1.1em; text-align: center; width: 70%; margin: 20px auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
   <thead>
     <tr style="background: #2c3e50; color: #ffffff; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
       <th style="padding: 14px 10px; border-right: 1px solid #444;">🧑 Player</th>
@@ -121,57 +147,27 @@ The `fingersUp()` method determines if each finger is extended:
 
 ---
 
-## 📁 Project Structure
-
-```
-Rock-Paper-Scissors/
-├── main.py              # Main game loop and GUI
-├── hand_tracker.py      # Hand detection and gesture classification
-├── game_logic.py        # Rock-Paper-Scissors game rules
-├── requirements.txt     # Dependencies
-├── README.md            # This file
-└── .gitignore           # Git ignore rules
-```
-
----
-
-## 🎮 Game Logic
-
-The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
-
-| Player      | AI          | Result    |
-|-------------|-------------|-----------|
-| Rock        | Scissors    | ✅ Win    |
-| Rock        | Paper       | ❌ Lose   |
-| Paper       | Rock        | ✅ Win    |
-| Paper       | Scissors    | ❌ Lose   |
-| Scissors    | Paper       | ✅ Win    |
-| Scissors    | Rock        | ❌ Lose   |
-| Same        | Same        | 🤝 Tie    |
-
----
-
 ## 📊 Performance
-
-| Metric                        | Value          |
-|-------------------------------|----------------|
-| Gesture Classification Speed  | < 10ms         |
-| Frame Rate                    | 15-30 FPS      |
-| Hand Tracking Accuracy        | High (MediaPipe)|
-| No. of Hand Landmarks         | 21             |
-| Gestures Supported            | 3 (Rock, Paper, Scissors) |
+          
+                                                      | Metric                        | Value          |
+                                                      |-------------------------------|----------------|
+                                                      | Gesture Classification Speed  | < 10ms         |
+                                                      | Frame Rate                    | 15-30 FPS      |
+                                                      | Hand Tracking Accuracy        | High (MediaPipe)|
+                                                      | No. of Hand Landmarks         | 21             |
+                                                      | Gestures Supported            | 3 (Rock, Paper, Scissors) |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component             | Technology                |
-|-----------------------|---------------------------|
-| Language              | Python 3.7+               |
-| Hand Tracking         | MediaPipe                 |
-| Gesture Classification| cvzone HandTrackingModule |
-| Image Processing      | OpenCV                    |
-| GUI                   | OpenCV window + custom overlays |
+                                                      | Component             | Technology                |
+                                                      |-----------------------|---------------------------|
+                                                      | Language              | Python 3.7+               |
+                                                      | Hand Tracking         | MediaPipe                 |
+                                                      | Gesture Classification| cvzone HandTrackingModule |
+                                                      | Image Processing      | OpenCV                    |
+                                                      | GUI                   | OpenCV window + custom overlays |
 
 ---
 
@@ -181,13 +177,6 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ---
 
-## 🧪 Running Tests
-
-```bash
-python -m unittest discover tests
-```
-
----
 
 ## 📫 Connect
 
@@ -199,9 +188,9 @@ python -m unittest discover tests
 
 ## 📝 License
 
-MIT License — feel free to use and modify.
+This project is developed for academic purposes at the University of Haripur.
+Feel free to use and modify.
 
 ---
-
 ⭐ If you found this helpful, consider giving it a star!
 ```
