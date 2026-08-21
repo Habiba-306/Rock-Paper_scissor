@@ -190,7 +190,9 @@ The AI opponent randomly selects Rock, Paper, or Scissors. Standard rules apply:
 
 ## 📸 Demo
 
-[Add a GIF or screenshot here]
+<p align="center">
+  <img src="./demo.gif" alt="Rock-Paper-Scissors Gameplay" width="600">
+</p>
 
 
 ## 💡 Possible Extensions
