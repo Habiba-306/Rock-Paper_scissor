@@ -20,19 +20,11 @@ This project implements a **real-time Rock-Paper-Scissors game** using computer 
 
 ## ✨ Features
 
-- **Real-time Hand Tracking:** Uses MediaPipe's 21-point hand landmark model
-- **Geometric Gesture Classification:** `fingersUp()` determines gestures via coordinate comparisons
-- **Three Gestures Supported:**
-  - ✊ Rock — All fingers down
-  - 🖐️ Paper — All fingers up
-  - ✌️ Scissors — Index + middle fingers up, others down
-- **AI Opponent:** Random choice with visual feedback
-- **10‑Round Match:** Play a best‑of‑10 series with a clear winner
-- **Sudden Death Tie‑Breaker:** If tied after 10 rounds, the game continues until someone wins
-- **Early Game End:** Press `E` to finish the match early
-- **Game‑Over Screen:** Displays a winner image (`winner_you.png` or `winner_AI.png`) with the final score
-- **Score Tracking:** Tracks wins, losses, and ties
-- **Low-latency Gameplay:** Responsive interaction suitable for live play
+- ✊ Rock, 🖐️ Paper, ✌️ Scissors gesture recognition via geometric reasoning
+- 🎯 10-round match with sudden-death tie-breaker
+- 📊 Real-time score tracking and round progression
+- 🖼️ Custom game-over screens with final scores
+- ⌨️ Keyboard controls: S (Start/Restart), E (End), Q (Quit)
 
 ---
 
@@ -89,12 +81,17 @@ python main.py
 
 ```
 Rock-Paper-Scissors/
-├── main.py              # Main game loop, UI, and match logic
-├── game_logic.py        # Gesture detection and winner determination
-├── hand_tracker.py      # Hand detection and gesture classification (if used)
+├── main.py              # Main game loop, UI, and match logic (200+ lines)
+├── game_logic.py        # Gesture detection and winner determination (pure logic)
 ├── resources/           # Images (background, AI moves, winner screens)
+│   ├── BG.png           # Background image (1280×720)
+│   ├── 1.png            # AI Rock ✊
+│   ├── 2.png            # AI Paper 🖐️
+│   ├── 3.png            # AI Scissors ✌️
+│   ├── winner_you.png   # 🎉 Player wins the match
+│   └── winner_AI.png    # 🤖 AI wins the match
 ├── requirements.txt     # Dependencies
-└──  README.md            # This file
+└── README.md            # Full documentation
 ```
 
 ---
